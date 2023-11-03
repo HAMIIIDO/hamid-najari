@@ -1,10 +1,10 @@
 .home-page{
     .text-zone{
         position: absolute;
-        left: 10%;
+        left: 20%;
         top: 50%;
-        transform: translateY(-50px);
-        width: 40%;
+        transform: translateY(-50%);
+        width: 100%;
         max-height: 90%;
     }
     h1{
@@ -25,8 +25,8 @@
             opacity: .6;
         }
         &:after{
-            content:'<h1/>';
-            font-family: 'La Belle Awrore';
+            content:'</h1>';
+            font-family: 'La Belle Aurore';
             color: #ffd700;
             font-size: 18px;
             position: absolute;
@@ -37,8 +37,9 @@
             opacity: .6;
         }
         img{
-            width: 45px;
+            width: 50px;
             margin-left: 20px;
+            margin-bottom: -7px;
             opacity:0;
             height: auto;
             animation: rotateIn 1s 1.4s linear both;

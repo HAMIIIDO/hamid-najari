@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="text-zone">
             <h1>
                 <AnimatedLetters letterClass={letterClass} strArray={['C','o','n','t','a','c','t',' ','m','e',]} idx={15} />
-            </h1>
+              </h1>
             <p>
                 I am intersted in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact me using bellow form either.
             </p>
@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
             <MapContainer center={[30.378041, -9.479118]} zoom={13} >
-                <TileLayer url="https//{s}.tile.opentreetmap.org/{z}/{x}/{y}.png" />
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[30.378041, -9.479118]}>
                     <Popup>Hamido lives here, come over for a cup of coffee :)</Popup>
                 </Marker>
