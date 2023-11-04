@@ -19,7 +19,7 @@ const Contact = () => {
       })
      const sendEmail =(e)=>{
         e.preventDefault()
-        emailjs.sendForm('service_hbqpshh', 'contact_form_id', refForm.current, 'AV1CTKERo49GpX2cI')
+        emailjs.sendForm('service_mrsyhoi', 'template_3zywtff', refForm.current, import.meta.env.VITE_PUBLIC_KEY)
       .then(() => {
           alert('Message successfully sent!');
           window.location.reload(false)
