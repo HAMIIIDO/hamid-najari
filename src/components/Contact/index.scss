@@ -32,7 +32,7 @@
     input[type='email']{
         width: 100%;
         border: 0;
-        background: #115173;
+        background: #0C243C;
         height: 50px;
         font-size: 16px;
         color: #fff;
@@ -43,7 +43,7 @@
     textarea{
         width: 100%;
         border: none;
-        background: #115173;
+        background: #0C243C;
         color: #fff;
         height: 50px;
         font-size: 16px;
@@ -54,13 +54,13 @@
     }
 
     .flat-button{
-        color: #ffd700;
+        color: #55C2C3;
         background: 0 0;
         font: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px ;
-        border: 1px solid #ffd700;
+        border: 1px solid #55C2C3;
         float: right;
         border-radius: 4px;
         cursor: pointer;
@@ -85,7 +85,7 @@
         font-size: 16px;
         display: block;
         padding-top:20px ;
-        color: #ffd700;
+        color: #55C2C3;
     }
 }
 .map-wrap{
@@ -102,3 +102,21 @@
     opacity: 0;
     animation: backInRight 1s 1.2s forwards;
 }
+.location{
+    display: none;
+}
+
+@media(max-width:576px){
+    .info-map{
+        display: none;
+        
+    }
+    .map-wrap{
+        display:none;
+    }
+    .location{
+        display:block;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+} 

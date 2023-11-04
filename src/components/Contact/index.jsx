@@ -4,6 +4,9 @@ import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Contact = () => {
     
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -50,6 +53,8 @@ const Contact = () => {
                         </li>
                         <li>
                             <input className ="flat-button" type='submit' value='SEND' />
+                            <NavLink   to="/location" ><FontAwesomeIcon icon={faLocation} className='flat-button location' /> </NavLink>
+                            
                         </li>
                         </ul>
                 </form>
@@ -64,7 +69,7 @@ const Contact = () => {
             Agadir 80000
             <br />
             <span>hamidenajari9@gmil.com</span>
-        </div>
+         </div>
         <div className="map-wrap">
             <MapContainer center={[30.378041, -9.479118]} zoom={13} >
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

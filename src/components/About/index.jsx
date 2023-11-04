@@ -6,7 +6,7 @@ import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@forta
 import Loader from 'react-loaders'
 
 const About = ()=>{
-    
+      
     const [letterClass, setLetterClass] = useState('text-animate')
     
     useEffect(()=>{
@@ -20,9 +20,11 @@ const About = ()=>{
     <div className="text-zone">
         <h1>
         <AnimatedLetters letterClass={letterClass} idx={15} strArray={['A','b','o','u','t',' ','m','e']}/></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, adipisci laborum unde beatae atque amet, quod suscipit veritatis dolore dolorem! Possimus blanditiis deserunt facere facilis ipsa qui, consequatur praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, adipisci laborum unde beatae atque amet, quod suscipit veritatis dolore dolorem! Possimus blanditiis deserunt facere facilis ipsa qui, consequatur praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, adipisci laborum unde beatae atque amet, quod suscipit veritatis dolore dolorem! Possimus blanditiis deserunt facere facilis ipsa qui, consequatur praesentium?</p>
+        <p>I'm a very ambitious front-end developer looking for a role in an
+            established softwaare company with the opportunity to work with the latest
+            technologies on challenging and diverse projects.</p>
+        <p>I'm quiet confident, very determend, motivated and continuously improving my skills trying to overcome each problem at a time</p>
+        <p>I'm also known for bieng a curious person, I love science and technology,  I find joy in the process of uncovering the underlying principles of the natural world and the intricate mechanisms of technological advancements </p>
 
     </div>
     <div className="stage-cube-cont">

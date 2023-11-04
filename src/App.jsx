@@ -6,6 +6,8 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
+import Location from './components/Location'
+import MyLinks from './components/MyLinks'
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
         <Route path='/' element={<Layout />} >
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
-
+        <Route path='contact' element={<Contact />}/>
+        <Route path='my_links' element={<MyLinks />}/>
         </Route>
+        <Route path='/location' element={<Location />} />
       </Routes>
     </>
   )
